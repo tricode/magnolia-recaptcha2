@@ -1,0 +1,4 @@
+'config':
+  'reCaptchaSecret': '======Re-Captcha Secret Key======'
+  'reCaptchaSiteKey': '======Re-Captcha Site Key======'
+  jcr:primaryType: 'mgnl:content'

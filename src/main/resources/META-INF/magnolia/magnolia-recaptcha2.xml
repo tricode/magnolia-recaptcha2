@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+    <name>magnolia-recaptcha2</name>
+    <displayName>Magnolia ReCaptcha2</displayName>
+    <description>${project.description}</description>
+    <class>nl.tricode.magnolia.MagnoliaRecaptcha2</class>
+    <versionHandler>nl.tricode.magnolia.setup.MagnoliaReCaptchaVersionHandler</versionHandler>
+    <version>${project.version}</version>
+
+    <components>
+        <id>main</id>
+        <component>
+            <type>nl.tricode.magnolia.recaptcha2.RecaptchaTemplatingFunctions</type>
+            <implementation>nl.tricode.magnolia.recaptcha2.RecaptchaTemplatingFunctions</implementation>
+            <scope>singleton</scope>
+        </component>
+    </components>
+
+    <dependencies>
+        <dependency>
+            <name>core</name>
+            <version>5.5.4/*</version>
+        </dependency>
+        <dependency>
+            <name>site</name>
+            <version>1.1.1/*</version>
+        </dependency>
+    </dependencies>
+</module>
