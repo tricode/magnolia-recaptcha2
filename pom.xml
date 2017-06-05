@@ -4,7 +4,7 @@
 
     <groupId>nl.tricode.magnolia</groupId>
     <artifactId>magnolia-recaptcha2</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Magnolia ReCaptcha2 module</name>
     <description>This module contains Google ReCaptcha2 API integration for Magnolia CMS.</description>
