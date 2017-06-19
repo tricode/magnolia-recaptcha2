@@ -2,7 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.tricode.magnolia</groupId>
+    <parent>
+        <groupId>info.magnolia.maven.poms-forge</groupId>
+        <artifactId>magnolia-parent-pom-forge</artifactId>
+        <version>30</version>
+    </parent>
+
+    <groupId>nl.tricode.magnolia.recaptcha2</groupId>
     <artifactId>magnolia-recaptcha2</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -13,6 +19,13 @@
         <name>Tricode Business Integrators B.V.</name>
         <url>http://www.tricode.nl</url>
     </organization>
+
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE</name>
+            <url>https://github.com/tricode/magnolia-recaptcha2/blob/master/LICENSE</url>
+        </license>
+    </licenses>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -116,25 +129,19 @@
         </resources>
     </build>
 
-    <scm>
-        <connection>scm:git:git@github.com:tricode/magnolia-recaptcha2.git</connection>
-        <developerConnection>scm:git:git@github.com:tricode/magnolia-recaptcha2.git</developerConnection>
-        <url>https://github.com/tricode/magnolia-recaptcha2.git</url>
-        <tag>1.0.0</tag>
-    </scm>
-
     <distributionManagement>
         <repository>
-            <id>tricode-magnolia-releases</id>
-            <name>Tricode Magnolia Releases</name>
-            <url>http://artifacts.tricode.nl/content/repositories/magnolia_github_releases/</url>
+            <id>magnolia.forge.releases</id>
+            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>
         </repository>
         <snapshotRepository>
-            <id>tricode-magnolia-snapshots</id>
-            <name>Tricode Magnolia Snapshots</name>
-            <url>http://artifacts.tricode.nl/content/repositories/magnolia_github_snapshots/</url>
-            <uniqueVersion>true</uniqueVersion>
+            <id>magnolia.forge.snapshots</id>
+            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>
         </snapshotRepository>
+        <site>
+            <id>magnolia.forge.sites</id>
+            <url>dav:https://nexus.magnolia-cms.com/content/sites/magnolia.forge.sites/${artifactId}/${project.version}</url>
+        </site>
     </distributionManagement>
 
 </project>
