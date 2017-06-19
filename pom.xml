@@ -136,33 +136,33 @@
         <tag>1.0.0</tag>
     </scm>
 
-    <distributionManagement>
-        <repository>
-            <id>tricode-magnolia-releases</id>
-            <name>Tricode Magnolia Releases</name>
-            <url>http://artifacts.tricode.nl/content/repositories/magnolia_github_releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>tricode-magnolia-snapshots</id>
-            <name>Tricode Magnolia Snapshots</name>
-            <url>http://artifacts.tricode.nl/content/repositories/magnolia_github_snapshots/</url>
-            <uniqueVersion>true</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
-
     <!--<distributionManagement>-->
         <!--<repository>-->
-            <!--<id>magnolia.forge.releases</id>-->
-            <!--<url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>-->
+            <!--<id>tricode-magnolia-releases</id>-->
+            <!--<name>Tricode Magnolia Releases</name>-->
+            <!--<url>http://artifacts.tricode.nl/content/repositories/magnolia_github_releases/</url>-->
         <!--</repository>-->
         <!--<snapshotRepository>-->
-            <!--<id>magnolia.forge.snapshots</id>-->
-            <!--<url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>-->
+            <!--<id>tricode-magnolia-snapshots</id>-->
+            <!--<name>Tricode Magnolia Snapshots</name>-->
+            <!--<url>http://artifacts.tricode.nl/content/repositories/magnolia_github_snapshots/</url>-->
+            <!--<uniqueVersion>true</uniqueVersion>-->
         <!--</snapshotRepository>-->
-        <!--<site>-->
-            <!--<id>magnolia.forge.sites</id>-->
-            <!--<url>dav:https://nexus.magnolia-cms.com/content/sites/magnolia.forge.sites/${artifactId}/${project.version}</url>-->
-        <!--</site>-->
     <!--</distributionManagement>-->
+
+    <distributionManagement>
+        <repository>
+            <id>magnolia.forge.releases</id>
+            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>magnolia.forge.snapshots</id>
+            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>
+        </snapshotRepository>
+        <site>
+            <id>magnolia.forge.sites</id>
+            <url>dav:https://nexus.magnolia-cms.com/content/sites/magnolia.forge.sites/${artifactId}/${project.version}</url>
+        </site>
+    </distributionManagement>
 
 </project>
