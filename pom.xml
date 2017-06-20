@@ -150,19 +150,19 @@
         <!--</snapshotRepository>-->
     <!--</distributionManagement>-->
 
-    <distributionManagement>
-        <repository>
-            <id>magnolia.forge.releases</id>
-            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>magnolia.forge.snapshots</id>
-            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>
-        </snapshotRepository>
-        <site>
-            <id>magnolia.forge.sites</id>
-            <url>dav:https://nexus.magnolia-cms.com/content/sites/magnolia.forge.sites/${artifactId}/${project.version}</url>
-        </site>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>magnolia.forge.releases</id>-->
+            <!--<url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.releases</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>magnolia.forge.snapshots</id>-->
+            <!--<url>https://nexus.magnolia-cms.com/content/repositories/magnolia.forge.snapshots</url>-->
+        <!--</snapshotRepository>-->
+        <!--<site>-->
+            <!--<id>magnolia.forge.sites</id>-->
+            <!--<url>dav:https://nexus.magnolia-cms.com/content/sites/magnolia.forge.sites/${artifactId}/${project.version}</url>-->
+        <!--</site>-->
+    <!--</distributionManagement>-->
 
 </project>
