@@ -36,4 +36,4 @@ After you get this keys, place them in Magnolia CMS -> /configuration/modules/ma
 * [Maven 3](http://maven.apache.org)
 
 ## License
-Copyright (c) 2015 Tricode and contributors. Released under a [GNUv3 license](https://github.com/tricode/magnolia-recaptcha2/blob/master/LICENSE).
+Copyright (c) 2017 Tricode and contributors. Released under a [GNUv3 license](https://github.com/tricode/magnolia-recaptcha2/blob/master/LICENSE).
