@@ -14,7 +14,7 @@ import javax.ws.rs.core.MultivaluedMap;
  * @author Lazo Apostolovski
  */
 public class ReCaptcha2 {
-
+    private static final String GOOGLE_API = "https://www.google.com/recaptcha/api/siteverify";
     /**
      * Verify re captcha status.
      *
@@ -48,8 +48,6 @@ public class ReCaptcha2 {
 
         return target.request().post(Entity.form(queryParams), ReCaptchaResponse.class);
     }
-
-    private static final String GOOGLE_API = "https://www.google.com/recaptcha/api/siteverify";
 
     private final String secret;
 
@@ -121,5 +119,4 @@ public class ReCaptcha2 {
     public static boolean isSuccess(final String secret, final String response, final String remoteIp) {
         return verify(secret, response, remoteIp).isSuccess();
     }
-
 }
